@@ -1,8 +1,4 @@
-class PostController < ApplicationController
-  def initialize
+class APIPostController < ApplicationController
 
-  end
-
-  
 
 end
