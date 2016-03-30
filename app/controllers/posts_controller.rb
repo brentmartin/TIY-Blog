@@ -1,11 +1,7 @@
-class PostController < ApplicationController
+class PostsController < ApplicationController
   def index #GET
-    if request[:format] == "json"
-      render App.posts.to_json, status: "200 OK"
-    else
       @posts = App.posts
       render_template 'posts/index.html.erb'
-    end
   end
 
   def show #GET
